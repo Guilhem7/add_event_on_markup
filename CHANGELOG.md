@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [8.1.2] - 2026-03-23
+
+### Added
+
+- Allow markup to contain `mouse.up` or `mouse.down` events
+
 ## [8.1.1] - 2026-03-10
 
 ### Fixed
