@@ -41,7 +41,7 @@ expect_markup_tag = (
     Expect(
         "markup style value",
         end_tag=r"(?<!\\)\]",
-        key=r"[@a-zA-Z_-][a-zA-Z0-9_-]*=",
+        key=r"[@a-zA-Z_-][a-zA-Z0-9_.-]*=",
         percent=PERCENT,
         color=COLOR,
         token=TOKEN,
@@ -105,7 +105,7 @@ class MarkupTokenizer(TokenizerState):
 expect_style = Expect(
     "style token",
     end_tag=r"(?<!\\)\]",
-    key=r"[@a-zA-Z_-][a-zA-Z0-9_-]*=",
+    key=r"[@a-zA-Z_-][a-zA-Z0-9_.-]*=",
     percent=PERCENT,
     color=COLOR,
     token=TOKEN,

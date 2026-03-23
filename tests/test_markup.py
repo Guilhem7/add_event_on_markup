@@ -87,6 +87,24 @@ from textual.markup import MarkupError, to_content
             ),
         ),
         (
+            "[on red @mouse.down=app.bell]Click me",
+            Content(
+                "Click me",
+                spans=[
+                    Span(0, 8, "on red @mouse.down=app.bell"),
+                ],
+            ),
+        ),
+        (
+            "[on red @mouse.down=app.bell]Click me[/on red @mouse.down=]",
+            Content(
+                "Click me",
+                spans=[
+                    Span(0, 8, "on red @mouse.down=app.bell"),
+                ],
+            ),
+        ),
+        (
             "[#ff0000]Hello, [#ffffff]world!\nMy work here is done.",
             Content(
                 "Hello, world!\nMy work here is done.",
